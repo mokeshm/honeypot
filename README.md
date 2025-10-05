@@ -25,3 +25,17 @@ A Python-based honeypot framework to monitor suspicious activities on SSH, FTP, 
 
 ```bash
 pip install flask requests
+
+---
+
+Honeypot Services
+
+SSH → port 22222
+
+FTP → port 21212
+
+HTTP → port 8081
+
+⚠ Ensure ports are open and Python runs as administrator if required.
+
+---
