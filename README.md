@@ -23,12 +23,9 @@ A Python-based honeypot framework to monitor suspicious activities on SSH, FTP, 
 - Python 3.8+  
 - Install dependencies:
 
-```bash
-pip install flask requests
-
 ---
 
-Honeypot Services
+#Honeypot Services
 
 SSH → port 22222
 
@@ -39,3 +36,34 @@ HTTP → port 8081
 ⚠ Ensure ports are open and Python runs as administrator if required.
 
 ---
+
+---
+
+#Setup
+
+Clone the repository:
+
+
+git clone https://github.com/yourusername/cyber-honeypot.git
+cd cyber-honeypot
+
+
+Install dependencies (if requirements.txt exists):
+
+pip install -r requirements.txt
+
+
+Run the Flask dashboard:
+
+python dashboard.py
+
+
+Open your browser at:
+
+http://localhost:5000
+
+---
+
+```bash
+
+pip install flask requests
