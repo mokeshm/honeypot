@@ -1,0 +1,284 @@
+2025-10-05 23:13:26,944 - [HTTP] Attack from 127.0.0.1 -> GET /
+2025-10-05 23:13:27,057 - [HTTP] Attack from 127.0.0.1 -> GET /favicon.ico
+2025-10-05 23:30:47,316 - [SSH] Attack from 127.0.0.1 -> error: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-10-05 23:30:47,330 - [FTP] Attack from 127.0.0.1 -> error: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-10-05 23:32:18,504 - [FTP] Attack from 127.0.0.1 -> error: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-10-05 23:32:18,521 - [SSH] Attack from 127.0.0.1 -> error: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-10-05 23:45:08,118 - [FTP] Attack from 127.0.0.1 -> error: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-10-05 23:45:42,728 - [FTP] Attack from 127.0.0.1 -> error: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-10-05 23:47:28,419 - [HTTP] Attack from 127.0.0.1 -> GET /
+2025-10-05 23:47:28,567 - [HTTP] Attack from 127.0.0.1 -> GET /favicon.ico
+2025-10-05 23:47:44,650 - [FTP] Attack from 127.0.0.1 -> error: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-10-05 23:53:07,018 - [SSH] Attack from 127.0.0.1 -> error: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-10-05 23:53:07,026 - [HTTP] Attack from 127.0.0.1 -> GET /fakeattack
+2025-10-05 23:53:07,034 - [FTP] Attack from 127.0.0.1 -> error: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-10-05 23:55:55,000 - [FTP] Attack from 127.0.0.1 -> error: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-10-05 23:55:55,008 - [HTTP] Attack from 127.0.0.1 -> GET /fakeattack
+2025-10-05 23:55:55,020 - [SSH] Attack from 127.0.0.1 -> error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-10-06 00:03:24,710 - INFO - [SSH] Attack from 127.0.0.1 -> testssh
+
+2025-10-06 00:03:25,710 - INFO - [FTP] Attack from 127.0.0.1 -> USER hacker
+PASS 12345
+
+2025-10-06 00:03:25,726 - INFO - [HTTP] Attack from 127.0.0.1 -> GET /fakeattack
+2025-10-06 00:03:42,915 - INFO - [SSH] Attack from 127.0.0.1 -> testssh
+
+2025-10-06 00:03:43,918 - INFO - [FTP] Attack from 127.0.0.1 -> USER hacker
+PASS 12345
+
+2025-10-06 00:03:43,926 - INFO - [HTTP] Attack from 127.0.0.1 -> GET /fakeattack
+2025-10-06 00:19:21,938 - INFO - [SSH] Attack from 127.0.0.1 -> testssh
+
+2025-10-06 00:19:21,940 - ERROR - Failed to get setting enable_telegram: no such table: settings
+2025-10-06 00:19:21,941 - ERROR - Failed to get setting enable_email: no such table: settings
+2025-10-06 00:19:22,937 - INFO - [FTP] Attack from 127.0.0.1 -> USER hacker
+PASS 12345
+
+2025-10-06 00:19:22,942 - ERROR - Failed to get setting enable_telegram: no such table: settings
+2025-10-06 00:19:22,944 - ERROR - Failed to get setting enable_email: no such table: settings
+2025-10-06 00:19:22,950 - INFO - [HTTP] Attack from 127.0.0.1 -> GET /fakeattack
+2025-10-06 00:19:22,954 - ERROR - Failed to get setting enable_telegram: no such table: settings
+2025-10-06 00:19:22,955 - ERROR - Failed to get setting enable_email: no such table: settings
+2025-10-06 00:23:56,820 - INFO - [SSH] Attack from 127.0.0.1 -> testssh
+
+2025-10-06 00:23:57,823 - INFO - [FTP] Attack from 127.0.0.1 -> USER hacker
+PASS 12345
+
+2025-10-06 00:23:57,840 - INFO - [HTTP] Attack from 127.0.0.1 -> GET /fakeattack
+2025-10-06 00:24:00,109 - ERROR - Email alert failed: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-28e8d1e9de2sm108855745ad.121 - gsmtp')
+2025-10-06 00:24:00,111 - ERROR - Traceback (most recent call last):
+  File "C:\Users\mokes\Music\VIJI MAM\cyber_honeypot\logger.py", line 106, in send_email_alert
+    server.login(email_address, email_password)
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+                   ^^^^^^^^^^
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-28e8d1e9de2sm108855745ad.121 - gsmtp')
+
+2025-10-06 00:24:01,057 - ERROR - Email alert failed: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-28e8d1b8437sm109095805ad.88 - gsmtp')
+2025-10-06 00:24:01,057 - ERROR - Traceback (most recent call last):
+  File "C:\Users\mokes\Music\VIJI MAM\cyber_honeypot\logger.py", line 106, in send_email_alert
+    server.login(email_address, email_password)
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+                   ^^^^^^^^^^
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-28e8d1b8437sm109095805ad.88 - gsmtp')
+
+2025-10-06 00:24:01,058 - ERROR - [HTTP] Exception from 127.0.0.1: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-10-06 00:24:01,060 - ERROR - Traceback (most recent call last):
+  File "C:\Users\mokes\Music\VIJI MAM\cyber_honeypot\http_honeypot.py", line 11, in do_GET
+    self.wfile.write(b"<h1>Fake Web Server</h1>")
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+2025-10-06 00:24:01,074 - ERROR - Email alert failed: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-339cf773a3csm5619257a91.25 - gsmtp')
+2025-10-06 00:24:01,074 - ERROR - Traceback (most recent call last):
+  File "C:\Users\mokes\Music\VIJI MAM\cyber_honeypot\logger.py", line 106, in send_email_alert
+    server.login(email_address, email_password)
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+                   ^^^^^^^^^^
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-339cf773a3csm5619257a91.25 - gsmtp')
+
+2025-10-06 00:24:03,894 - ERROR - Email alert failed: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-78b01f9cda9sm10367609b3a.13 - gsmtp')
+2025-10-06 00:24:03,895 - ERROR - Traceback (most recent call last):
+  File "C:\Users\mokes\Music\VIJI MAM\cyber_honeypot\http_honeypot.py", line 11, in do_GET
+    self.wfile.write(b"<h1>Fake Web Server</h1>")
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mokes\Music\VIJI MAM\cyber_honeypot\logger.py", line 106, in send_email_alert
+    server.login(email_address, email_password)
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+                   ^^^^^^^^^^
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-78b01f9cda9sm10367609b3a.13 - gsmtp')
+
+2025-10-06 00:26:37,382 - INFO - [SSH] Attack from 127.0.0.1 -> testssh
+
+2025-10-06 00:26:38,383 - INFO - [FTP] Attack from 127.0.0.1 -> USER hacker
+PASS 12345
+
+2025-10-06 00:26:38,390 - INFO - [HTTP] Attack from 127.0.0.1 -> GET /fakeattack
+2025-10-06 00:27:34,050 - INFO - [SSH] Attack from 127.0.0.1 -> testssh
+
+2025-10-06 00:27:35,051 - INFO - [FTP] Attack from 127.0.0.1 -> USER hacker
+PASS 12345
+
+2025-10-06 00:27:35,075 - INFO - [HTTP] Attack from 127.0.0.1 -> GET /fakeattack
+2025-10-06 00:27:40,727 - INFO - [SSH] Attack from 127.0.0.1 -> testssh
+
+2025-10-06 00:27:41,743 - INFO - [FTP] Attack from 127.0.0.1 -> USER hacker
+PASS 12345
+
+2025-10-06 00:27:41,759 - INFO - [HTTP] Attack from 127.0.0.1 -> GET /fakeattack
+2025-10-06 00:27:43,987 - ERROR - Email alert failed: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-78b01f9cbb4sm10361170b3a.10 - gsmtp')
+2025-10-06 00:27:43,989 - ERROR - Traceback (most recent call last):
+  File "C:\Users\mokes\Music\VIJI MAM\cyber_honeypot\logger.py", line 106, in send_email_alert
+    server.login(email_address, email_password)
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+                   ^^^^^^^^^^
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-78b01f9cbb4sm10361170b3a.10 - gsmtp')
+
+2025-10-06 00:27:44,943 - ERROR - Email alert failed: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-78b0206e6d9sm10455382b3a.65 - gsmtp')
+2025-10-06 00:27:44,944 - ERROR - Traceback (most recent call last):
+  File "C:\Users\mokes\Music\VIJI MAM\cyber_honeypot\logger.py", line 106, in send_email_alert
+    server.login(email_address, email_password)
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+                   ^^^^^^^^^^
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-78b0206e6d9sm10455382b3a.65 - gsmtp')
+
+2025-10-06 00:27:44,970 - ERROR - Email alert failed: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-339a701c457sm14147675a91.23 - gsmtp')
+2025-10-06 00:27:44,974 - ERROR - Traceback (most recent call last):
+  File "C:\Users\mokes\Music\VIJI MAM\cyber_honeypot\logger.py", line 106, in send_email_alert
+    server.login(email_address, email_password)
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+                   ^^^^^^^^^^
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-339a701c457sm14147675a91.23 - gsmtp')
+
+2025-10-06 00:27:44,974 - ERROR - [HTTP] Exception from 127.0.0.1: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-10-06 00:27:44,976 - ERROR - Traceback (most recent call last):
+  File "C:\Users\mokes\Music\VIJI MAM\cyber_honeypot\http_honeypot.py", line 11, in do_GET
+    self.wfile.write(b"<h1>Fake Web Server</h1>")
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+2025-10-06 00:27:48,470 - ERROR - Email alert failed: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-3399c0b24eesm8984639a91.1 - gsmtp')
+2025-10-06 00:27:48,473 - ERROR - Traceback (most recent call last):
+  File "C:\Users\mokes\Music\VIJI MAM\cyber_honeypot\http_honeypot.py", line 11, in do_GET
+    self.wfile.write(b"<h1>Fake Web Server</h1>")
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mokes\Music\VIJI MAM\cyber_honeypot\logger.py", line 106, in send_email_alert
+    server.login(email_address, email_password)
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+                   ^^^^^^^^^^
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-3399c0b24eesm8984639a91.1 - gsmtp')
+
+2025-10-06 00:43:36,342 - INFO - [SSH] Attack from 127.0.0.1 -> testssh
+
+2025-10-06 00:43:37,340 - INFO - [FTP] Attack from 127.0.0.1 -> USER hacker
+PASS 12345
+
+2025-10-06 00:43:37,364 - INFO - [HTTP] Attack from 127.0.0.1 -> GET /fakeattack
+2025-10-06 00:43:40,701 - ERROR - Email alert failed: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-28e8d1b9e44sm108392535ad.67 - gsmtp')
+2025-10-06 00:43:40,707 - ERROR - Traceback (most recent call last):
+  File "C:\Users\mokes\Music\VIJI MAM\cyber_honeypot\logger.py", line 106, in send_email_alert
+    server.login(email_address, email_password)
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+                   ^^^^^^^^^^
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-28e8d1b9e44sm108392535ad.67 - gsmtp')
+
+2025-10-06 00:43:41,763 - ERROR - Email alert failed: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-339a6ff256dsm14182692a91.16 - gsmtp')
+2025-10-06 00:43:41,765 - ERROR - Traceback (most recent call last):
+  File "C:\Users\mokes\Music\VIJI MAM\cyber_honeypot\logger.py", line 106, in send_email_alert
+    server.login(email_address, email_password)
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+                   ^^^^^^^^^^
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-339a6ff256dsm14182692a91.16 - gsmtp')
+
+2025-10-06 00:43:41,772 - ERROR - Email alert failed: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-78b01fb28adsm10498259b3a.35 - gsmtp')
+2025-10-06 00:43:41,773 - ERROR - Traceback (most recent call last):
+  File "C:\Users\mokes\Music\VIJI MAM\cyber_honeypot\logger.py", line 106, in send_email_alert
+    server.login(email_address, email_password)
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+                   ^^^^^^^^^^
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-78b01fb28adsm10498259b3a.35 - gsmtp')
+
+2025-10-06 00:43:41,774 - ERROR - [HTTP] Exception from 127.0.0.1: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-10-06 00:43:41,778 - ERROR - Traceback (most recent call last):
+  File "C:\Users\mokes\Music\VIJI MAM\cyber_honeypot\http_honeypot.py", line 11, in do_GET
+    self.wfile.write(b"<h1>Fake Web Server</h1>")
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+2025-10-06 00:43:46,461 - ERROR - Email alert failed: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-78b01fb281bsm10488049b3a.37 - gsmtp')
+2025-10-06 00:43:46,462 - ERROR - Traceback (most recent call last):
+  File "C:\Users\mokes\Music\VIJI MAM\cyber_honeypot\http_honeypot.py", line 11, in do_GET
+    self.wfile.write(b"<h1>Fake Web Server</h1>")
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mokes\Music\VIJI MAM\cyber_honeypot\logger.py", line 106, in send_email_alert
+    server.login(email_address, email_password)
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+                   ^^^^^^^^^^
+  File "C:\Users\mokes\anaconda3\envs\honeypot\Lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-78b01fb281bsm10488049b3a.37 - gsmtp')
+
+2025-10-06 00:44:31,661 - INFO - [SSH] Attack from 127.0.0.1 -> testssh
+
+2025-10-06 00:44:32,665 - INFO - [FTP] Attack from 127.0.0.1 -> USER hacker
+PASS 12345
+
+2025-10-06 00:44:32,672 - INFO - [HTTP] Attack from 127.0.0.1 -> GET /fakeattack
